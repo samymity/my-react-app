@@ -71,3 +71,55 @@ export default defineConfig([
   },
 ])
 ```
+1. Preparation (Don't skip!)
+Make sure you are not uploading the node_modules folder, which is massive and will crash your push.
+
+Check for .gitignore: In your terminal, type ls .gitignore.
+
+If it's missing: Type echo "node_modules/" > .gitignore.
+
+2. The Local Setup (The "Git Init" part)
+Run these commands one by one in your terminal:
+
+PowerShell
+# 1. Start tracking the folder
+git init
+
+# 2. Add all your files to the "waiting area"
+git add .
+
+# 3. Save the files into your first "snapshot"
+git commit -m "Initial commit of my React app"
+
+# 4. Rename the branch to 'main' (modern standard)
+git branch -M main
+3. The GitHub Setup (The "Remote" part)
+Since you want to do this manually to be safe:
+
+Go to github.com/new.
+
+Name it my-react-app.
+
+Keep it Private.
+
+Important: Do not check any boxes (No README, No License).
+
+Click Create Repository.
+
+Copy the URL it gives you (e.g., https://github.com/samymity/my-react-app.git).
+
+4. The Final Bridge (The "Push" part)
+Go back to your terminal and finish the link:
+
+PowerShell
+# 1. Tell your computer where the cloud repo is
+git remote add origin https://github.com/samymity/my-react-app.git
+
+# 2. Send the code!
+git push -u origin main
+How to use your MCP Server next time?
+Now that you've done it manually once, your GitHub MCP in Antigravity is much smarter. In the future, for a new project, you can just say:
+
+"Agent, initialize a git repo here and use the GitHub MCP to create a matching private repo on my account and push it."
+
+Would you like me to help you verify that the files arrived safely on GitHub? Just ask me to "List my GitHub files for my-react-app."
