@@ -1,6 +1,7 @@
 import { Header } from './component/Header';
 import { Body } from './component/Body';
 import { Footer } from './component/Footer';
+import { HookPlug } from './component/HookPlug';
 import { Routes, Route, Link } from 'react-router-dom';
 
 function Hello() {
@@ -25,11 +26,13 @@ function App() {
         background: '#eee'
       }}>
         <Link to="/home" style={{ color: '#d32f2f', fontWeight: 'bold', textDecoration: 'none' }}>INCIDENTS</Link>
+        <Link to="/hooks" style={{ color: '#d32f2f', fontWeight: 'bold', textDecoration: 'none' }}>HOOKS DEMO</Link>
         <Link to="/hello" style={{ color: '#d32f2f', fontWeight: 'bold', textDecoration: 'none' }}>MISCELLANEOUS</Link>
       </nav>
 
       <Routes>
         <Route path="/home" element={<Body />} />
+        <Route path="/hooks" element={<HookPlug />} />
         <Route path="/hello" element={<Hello />} />
 
 
