@@ -24,8 +24,8 @@ function App() {
         padding: '1rem',
         background: '#eee'
       }}>
-        <Link to="/home" style={{ color: '#d32f2f', fontWeight: 'bold', textDecoration: 'none' }}>Home</Link>
-        <Link to="/hello" style={{ color: '#d32f2f', fontWeight: 'bold', textDecoration: 'none' }}>Hello</Link>
+        <Link to="/home" style={{ color: '#d32f2f', fontWeight: 'bold', textDecoration: 'none' }}>INCIDENTS</Link>
+        <Link to="/hello" style={{ color: '#d32f2f', fontWeight: 'bold', textDecoration: 'none' }}>MISCELLANEOUS</Link>
       </nav>
 
       <Routes>
