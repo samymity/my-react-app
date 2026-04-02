@@ -1,13 +1,16 @@
-import { Header } from './component/Header';
-import { Body } from './component/Body';
-import { Footer } from './component/Footer';
+import { Header } from './components/Header';
+import { Body } from './components/Body';
+import { Footer } from './components/Footer';
 import { Routes, Route, Link } from 'react-router-dom';
-import { MyComponent } from './component/MyComponent';
-import { MyComponent2 } from './component/MyComponent2';
-import { Garage } from './component/Garage';
+import { MyComponent } from './components/MyComponent';
+import { MyComponent2 } from './components/MyComponent2';
+import { Garage } from './components/Garage';
+import TestUseState from './components/TestUseState';
 
-import { Car } from './component/Car';
-import Parent from './component/Parent';
+
+
+import { Car } from './components/Car';
+import Parent from './components/Parent';
 
 function Hello() {
   return (
@@ -37,6 +40,7 @@ function App() {
         <Link to="/garage" style={{ color: '#d32f2f', fontWeight: 'bold', textDecoration: 'none' }}>GARAGE</Link>
         <Link to="/car" style={{ color: '#d32f2f', fontWeight: 'bold', textDecoration: 'none' }}>CAR</Link>
         <Link to="/parent" style={{ color: '#d32f2f', fontWeight: 'bold', textDecoration: 'none' }}>PARENT</Link>
+        <Link to="/test" style={{ color: '#d32f2f', fontWeight: 'bold', textDecoration: 'none' }}>TEST</Link>
       </nav>
 
       <Routes>
@@ -49,6 +53,8 @@ function App() {
         <Route path="/car" element={<Car />} />
 
         <Route path="/parent" element={<Parent />} />
+
+        <Route path="/test" element={<TestUseState />} />
 
       </Routes>
 

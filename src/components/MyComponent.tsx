@@ -4,7 +4,7 @@ export function MyComponent() {
     // useState(0) ka matlab: shuruat 0 se karo
     // count = current value
     // setCount = wo function jo value badlega
-    const [count, setCount] = useState(0);
+    const [count, setCount] = useState(5);
 
     return (
         <div>
