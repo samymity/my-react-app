@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 export function MyComponent() {
     // useState(0) ka matlab: shuruat 0 se karo
