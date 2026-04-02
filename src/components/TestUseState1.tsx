@@ -7,7 +7,7 @@ interface Employee {
     department: string;
 }
 
-function TestUseState() {
+function TestUseState1() {
 
 
     const [count, setCount] = useState(10);
@@ -51,7 +51,7 @@ function TestUseState() {
             <p>Name: {employee.name}</p>
             <p>Age: {employee.age}</p>
             <p>Department: {employee.department}</p>
-            
+
             <button className="mood-button" onClick={updateEmployeeName}>
                 Update Name
             </button>
@@ -61,4 +61,4 @@ function TestUseState() {
         </>
     )
 }
-export default TestUseState 
+export default TestUseState1 

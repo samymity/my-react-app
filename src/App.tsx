@@ -5,7 +5,7 @@ import { Routes, Route, Link } from 'react-router-dom';
 import { MyComponent } from './components/MyComponent';
 import { MyComponent2 } from './components/MyComponent2';
 import { Garage } from './components/Garage';
-import TestUseState from './components/TestUseState';
+import TestUseState1 from './components/TestUseState';
 
 
 
@@ -54,7 +54,7 @@ function App() {
 
         <Route path="/parent" element={<Parent />} />
 
-        <Route path="/test" element={<TestUseState />} />
+        <Route path="/test" element={<TestUseState1 />} />
 
       </Routes>
 
